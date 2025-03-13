@@ -17,28 +17,6 @@
 - **React Native CLI** — для побудови та запуску додатка.
 - **Android Studio** (для Android) або **Xcode** (для iOS) — для запуску додатка на емуляторі або реальному пристрої.
 
-### Кроки для запуску:
-
-1. Клонуйте репозиторій:
-   ```bash
-   git clone https://github.com/your-username/my-mobile-app.git
-   ```
-
-2. Встановіть залежності:
-   ```bash
-   npm install
-   ```
-
-3. Запустіть додаток:
-   - Для Android:
-     ```bash
-     npx react-native run-android
-     ```
-
-   - Для iOS (лише для macOS):
-     ```bash
-     npx react-native run-ios
-     ```
 
 ## Необхідні імпорти
 
@@ -49,33 +27,6 @@ import React, { Component } from "react";
 import { View, Text, FlatList, Image, StyleSheet, TouchableOpacity, TextInput } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-```
-
-Також, додаток використовує зображення з папки `assets`, тому переконайтесь, що ви маєте всі необхідні файли в папці `assets`.
-
-## Структура проекту
-
-Проект має наступну структуру:
-
-```
-my-mobile-app/
-├── assets/               # Зображення для логотипів та фотогалереї
-│   ├── logo4.jpg         # Логотип 1
-│   ├── logo1.png         # Логотип 2
-│   ├── природа1.jpg      # Фото природи 1
-│   ├── природа2.jpg      # Фото природи 2
-│   └── ...               # Інші зображення
-├── src/                  # Основний код додатка
-│   ├── components/       # Повторювані компоненти
-│   │   ├── TopHeader.js  # Верхній заголовок
-│   │   ├── NavigationBar.js  # Навігаційна панель
-│   │   └── Footer.js     # Футер
-│   ├── screens/          # Екрани додатка
-│   │   ├── MainScreen.js # Головний екран з новинами
-│   │   ├── GalleryScreen.js  # Екран фотогалереї
-│   │   └── ProfileScreen.js  # Екран реєстрації
-│   ├── App.js            # Головний файл додатка
-└── package.json          # Налаштування проекту та залежності
 ```
 
 ![Головна](assets/Головна.png)
